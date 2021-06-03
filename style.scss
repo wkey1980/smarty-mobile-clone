@@ -86,40 +86,67 @@ li a {
   }
 }
 
-
-
-;
-
-//     & a {
-//       color: white;
-//       padding: 0 15px;
-//       font-weight: bold;
-//       cursor: pointer;
-//     }
-
-//     & button {
-//       width: 60px;
-//       height: 20px;
-//       background-color: tomato;
-//     }
-//   }
+// .hero * {
+//   outline: 1px solid red;
 // }
-// // TODO CHANGE FROM BUTTON TO A TAG
-// button {
-//   width: 80px;
-//   height: 30px;
-// }
-// button.log-in {
-//   width: 80px;
-//   height: 30px;
-//   background-color: rgb(66, 68, 73);
-//   color: rgb(255, 255, 255);
 
-//   & img {
-//     width: 17px;
-//     height: 17px;
-//     vertical-align: middle;
-//     margin: 0 5px 0 0;
-//   }
-// }
-// button.
+.hero {
+  // background-color: #333539;
+
+  width: 100%;
+  height: 414px;
+  min-height: 414px;
+
+  margin-top: 2rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 414px;
+    min-height: 414px;
+
+    padding: 0 40px;
+
+    outline: 1px solid red;
+
+    // ! TEMP styles
+    & > h1,
+    & > div {
+      padding: 20px 0;
+    }
+  }
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 414px;
+  min-height: 414px;
+}
+
+.view-all-plans {
+  color: #ffffff;
+  padding: 10px 40px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 2px solid rgb(184, 174, 241);
+
+  &::after {
+    content"test";
+    background-image: url('./images/arrow-forward-outline.svg');
+    color: white;
+
+    background-color: red;
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+  }
+}
